@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Off Base Barbers — Walk-In Barbershop in Oromocto</title>
+<style>:root{--bg:#20241c;--panel:#2c3324;--ink:#eef0e4;--acc:#c8a24a;--mut:#a9b096}body{margin:0;font-family:'IBM Plex Sans',Arial,sans-serif;background:var(--bg);color:var(--ink)}h1,h2{font-family:'Saira Stencil One','Arial Black',sans-serif;font-weight:400;letter-spacing:1px}header{display:flex;justify-content:space-between;align-items:center;padding:16px 24px;border-bottom:2px dashed var(--acc)}.brand{font-family:'Saira Stencil One','Arial Black',sans-serif;font-size:26px;color:var(--acc)}.hero{padding:42px 24px;background:linear-gradient(100deg,#2c3324 55%,#20241c)}.hero h1{font-size:38px;margin:8px 0;max-width:600px}.btn{display:inline-block;background:var(--acc);color:#20241c;padding:12px 26px;text-decoration:none;font-weight:800}main{max-width:940px;margin:0 auto;padding:24px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}.card{background:var(--panel);border:1px solid #47513a;padding:14px 16px}table{width:100%;border-collapse:collapse}td{padding:7px 4px;border-bottom:1px solid #47513a}form{display:grid;gap:10px;max-width:520px}input,select,textarea{width:100%;padding:10px;background:#171a13;border:1px solid #47513a;color:var(--ink);font:inherit}button{background:var(--acc);color:#20241c;border:0;padding:12px;font:inherit;font-weight:800;cursor:pointer}.disc,.formnote{font-size:13px;color:var(--mut)}.ref{font-weight:800;color:var(--acc)}footer{padding:22px 24px;font-size:14px;border-top:2px dashed var(--acc);color:var(--mut)}a{color:var(--acc)}</style>
+</head>
+<body>
+<header><div class="brand">Off Base Barbers</div><a class="btn" href="tel:+15062081800">Call the shop: (506) 208-1800</a></header>
+<section class="hero"><h1>Walk-ins only. Six days a week. No appointment needed.</h1><p>Off Base Barbers opened its doors in June 2020 on Restigouche Road in Oromocto, New Brunswick — home of CFB Gagetown. Laura, Christina, Michaela and Kristen welcome walk-ins six days a week: cuts, beard trims, hot towel shaves and head shaves.</p><p><a class="btn" href="tel:+15062081800">(506) 208-1800</a></p></section>
+<main>
+<h2 id="services">Services</h2>
+<div class="grid"><div class="card">Haircut</div><div class="card">Men's Haircut</div><div class="card">Beard Trim</div><div class="card">Hot Towel Shave</div><div class="card">Head Shave</div></div>
+<h2 id="hours">Hours</h2>
+<table><tr><td>Monday</td><td>9:00 AM – 5:00 PM</td></tr><tr><td>Tuesday</td><td>9:00 AM – 5:00 PM</td></tr><tr><td>Wednesday</td><td>9:00 AM – 5:00 PM</td></tr><tr><td>Thursday</td><td>9:00 AM – 5:00 PM</td></tr><tr><td>Friday</td><td>9:00 AM – 4:00 PM</td></tr><tr><td>Saturday</td><td>9:00 AM – 1:00 PM</td></tr><tr><td>Sunday</td><td>Closed</td></tr></table>
+<h2 id="visit">Visit Us</h2>
+<p>281 Restigouche Rd, Oromocto, NB E2V 2H5<br><a href="tel:+15062081800">(506) 208-1800</a></p>
+<h2 id="book">Request an Appointment</h2>
+<form id="req" novalidate>
+<label>Your name<input required type="text" name="name" placeholder="Your name"></label>
+<label>Phone<input required type="tel" name="phone" placeholder="(000) 000-0000"></label>
+<label>Service you'd like<select name="service"><option>Haircut</option><option>Men's Haircut</option><option>Beard Trim</option><option>Hot Towel Shave</option><option>Head Shave</option></select></label>
+<label>Message (optional)<textarea name="msg" rows="3"></textarea></label>
+<button type="submit">Send request</button>
+<p class="formnote">This concept form doesn't send anything yet — it shows a local reference to demonstrate the flow.</p>
+<p class="disc">Concept preview — this is a sample website concept, not Off Base Barbers's official site.</p>
+<p id="ref" class="ref" hidden></p>
+</form>
+<script>
+document.getElementById('req').addEventListener('submit',function(e){e.preventDefault();
+var r='OBB54-'+Math.floor(10000+Math.random()*90000);
+var el=document.getElementById('ref');el.hidden=false;
+el.textContent="Thanks! Your request reference is "+r+". On the live site, this request would go straight to the shop.";});
+</script>
+</main>
+<footer><p>Off Base Barbers — 281 Restigouche Rd, Oromocto, NB E2V 2H5 — <a href="tel:+15062081800">(506) 208-1800</a></p><p>Concept preview — this is a sample website concept, not Off Base Barbers's official site.</p></footer>
+</body>
+</html>
